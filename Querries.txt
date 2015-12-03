@@ -1,0 +1,12 @@
+CREATE TABLE INSURANCE_DATA(policy_number int,household_id int,vehcile int,registered_till int,claimed_year 
+	int,state string,car_model string,claim_amount int)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' 
+TBLPROPERTIES("skip.header.line.count"="1");
+
+LOAD DATA INPATH '\HdiSamples\InsuranceData.csv' OVERWRITE INTO TABLE INSURANCE_DATA;
+
+
+
+select claimed_year,count(*) from INSURANCE_DATA group by claimed_year;---Number of claimes for each year
+select state,count(*) from INSURANCE_DATA group by state;------Number of claims for each state
+select state,sum(claim_amount) from INSURANCE_DATA group by state;-----Sum of claimed amount for each state

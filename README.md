@@ -9,13 +9,44 @@ Data Analysis in Insurance Industry
 
 -----------------------------------
 
-In this Project, We have analyzed an insurance industry data for car Accidents.To analyze the data follow the steps.
+In this Project, We have analyzed an insurance industry data for car Accidents.To analyze the data follow the steps. You can find the Insurance data in the same repository named as "InsuranceData.csv".  We had run various queries, which are in the  file "CODE". 
+
+
 
 **Prerequisites:**
 
 Microsoft Azure account [Click here for trial account][1]
 
 Cloud Berry for Azure [To download click here][2]
+
+
+
+
+
+**Memory Configuration:**
+
+working Node Configuration -
+
+ - no. of core- 4 
+ - Ram -14 GB
+ - disks -8 
+ - local SSD -200 GB
+
+Total no. of working nodes: 2
+
+Head Node Configuration -
+
+- core- 4
+- Ram -14 GB
+- disks-8
+- local SSD- 200 GB
+
+Total no. of head nodes: 2
+
+
+
+
+
 
 
 **Steps:**
@@ -40,7 +71,7 @@ Cloud Berry for Azure [To download click here][2]
  - In Data+Analytics, Select HDInsight
 
  - A new pop-up will appear, Type the cluster name.
-Select type as "Hadoop", Operating  System as"Linux", Select Total node as 2, Put Login name and password, And click on *create*.
+Select type as "Hadoop", Operating  System as"Microsoft", Select Total node as 2, Put Login name and password, And click on *create*.
 
  - Azure will start deploying a cluster. It will take few minutes to complete the  process.
 
@@ -124,7 +155,7 @@ OVERWRITE INTO TABLE INSURANCE_DATA;</pre>
 
  - In Insert tab, Select power query.
 
-  - Project the data.
+ - Project the data.
 
    
 
